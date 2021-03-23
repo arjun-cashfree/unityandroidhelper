@@ -29,11 +29,13 @@ public class CFUnityHelperService {
 
     public static final String TOKEN = "TOKEN";
     public static final String FUNCTION = "function";
+    public static final String STAGE = "stage";
 
     public static void startUPIIntentPayment(
             Activity activity,
             String appId,
             String token,
+            String stage,
             String orderId,
             String orderAmount,
             String orderCurrency,
@@ -47,6 +49,7 @@ public class CFUnityHelperService {
         unityHelperIntent.putExtra(FUNCTION, CFUnityHelperActivity.UPIINTENT);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_APP_ID, appId);
         unityHelperIntent.putExtra(TOKEN, token);
+        unityHelperIntent.putExtra(STAGE, stage);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_ID, orderId);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_AMOUNT, orderAmount);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_CURRENCY, orderCurrency);
@@ -64,6 +67,7 @@ public class CFUnityHelperService {
             Activity activity,
             String appId,
             String token,
+            String stage,
             String orderId,
             String orderAmount,
             String orderCurrency,
@@ -94,6 +98,7 @@ public class CFUnityHelperService {
             Activity activity,
             String appId,
             String token,
+            String stage,
             String orderId,
             String orderAmount,
             String orderCurrency,
@@ -108,6 +113,7 @@ public class CFUnityHelperService {
         unityHelperIntent.putExtra(FUNCTION, CFUnityHelperActivity.WEB_CHECKOUT);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_APP_ID, appId);
         unityHelperIntent.putExtra(TOKEN, token);
+        unityHelperIntent.putExtra(STAGE, stage);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_ID, orderId);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_AMOUNT, orderAmount);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_CURRENCY, orderCurrency);
@@ -127,6 +133,7 @@ public class CFUnityHelperService {
             Activity activity,
             String appId,
             String token,
+            String stage,
             String orderId,
             String orderAmount,
             String orderCurrency,
@@ -141,6 +148,7 @@ public class CFUnityHelperService {
         unityHelperIntent.putExtra(FUNCTION, CFUnityHelperActivity.WEB_CHECKOUT);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_APP_ID, appId);
         unityHelperIntent.putExtra(TOKEN, token);
+        unityHelperIntent.putExtra(STAGE, stage);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_ID, orderId);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_AMOUNT, orderAmount);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_CURRENCY, orderCurrency);
@@ -160,6 +168,7 @@ public class CFUnityHelperService {
             Activity activity,
             String appId,
             String token,
+            String stage,
             String orderId,
             String orderAmount,
             String orderCurrency,
@@ -174,6 +183,7 @@ public class CFUnityHelperService {
         unityHelperIntent.putExtra(FUNCTION, CFUnityHelperActivity.WEB_CHECKOUT);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_APP_ID, appId);
         unityHelperIntent.putExtra(TOKEN, token);
+        unityHelperIntent.putExtra(STAGE, stage);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_ID, orderId);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_AMOUNT, orderAmount);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_CURRENCY, orderCurrency);
@@ -194,6 +204,7 @@ public class CFUnityHelperService {
             Activity activity,
             String appId,
             String token,
+            String stage,
             String orderId,
             String orderAmount,
             String orderCurrency,
@@ -212,6 +223,7 @@ public class CFUnityHelperService {
         unityHelperIntent.putExtra(FUNCTION, CFUnityHelperActivity.WEB_CHECKOUT);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_APP_ID, appId);
         unityHelperIntent.putExtra(TOKEN, token);
+        unityHelperIntent.putExtra(STAGE, stage);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_ID, orderId);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_AMOUNT, orderAmount);
         unityHelperIntent.putExtra(CFPaymentService.PARAM_ORDER_CURRENCY, orderCurrency);
