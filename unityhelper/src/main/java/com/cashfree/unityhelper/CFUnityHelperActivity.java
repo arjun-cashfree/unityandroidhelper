@@ -66,6 +66,7 @@ public class CFUnityHelperActivity extends AppCompatActivity {
                         }
                     }
                 }
+                finish();
             }
         }
 }
