@@ -1,0 +1,2 @@
+include ':unityhelper'
+rootProject.name = "Unity Helper"
